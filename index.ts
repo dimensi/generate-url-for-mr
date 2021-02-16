@@ -52,7 +52,7 @@ if (![type, number].every(Boolean)) {
 }
 
 if (project === 'assr') {
-  const result = `http://${type}-alfabankru-${number}.assr.reviews.ci.k8s.alfa.link/`
+  const result = `http://${type}-alfabankru-${number}.assr.reviews.ci.k8s.alfa.link/api/v1/assr/mock/`
   console.log(result)
   await clipboard.writeText(result)
   console.log('Сохраненно в буфере обмена')
