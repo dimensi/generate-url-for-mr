@@ -59,7 +59,7 @@ if (project === 'assr') {
 }
 
 if (project === 'akit') {
-  const result = `http://akit-${type}-alfabankru-${number}.alfabankru-reviews.ci.k8s.alfa.link/api/akit/`
+  const result = `http://akit-feature-alfabankru-${number}.reviews.ci.k8ng.alfa.link/api/akit/`
   console.log(result)
   await clipboard.writeText(result)
   console.log('Сохраненно в буфере обмена')
