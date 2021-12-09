@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "assr": "deno run --allow-run ./index.ts assr",
-    "akit": "deno run --allow-run ./index.ts akit"
+    "akit": "deno run --allow-run ./index.ts akit",
+    "create-mr": "deno run --allow-run --allow-net ./create-mr.ts"
   }
 }
