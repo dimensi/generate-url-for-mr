@@ -8,7 +8,7 @@ let [project, type, number] = Deno.args as Args
 
 const projectPaths = {
   akit: '../akit/',
-  assr: '../assr/'
+  assr: '../assr-2/'
 }
 
 if (!project) {

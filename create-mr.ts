@@ -94,7 +94,7 @@ Closes ${jiraTaskName}`,
   }
 
   const link = await createMr();
-  console.log(link);
+  console.log("ссылка на мр " + link);
   await clipboard.writeText(link);
 } catch (err) {
   console.error(err);
