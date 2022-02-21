@@ -56,7 +56,9 @@ try {
   }
 
   async function createMr() {
-    const jiraTaskName = sourceBranch.replace("feature/", "");
+    const jiraTaskName = sourceBranch.replace(/feature\/bugfix\//, "");
+    const [firstPart, secondPart] = sourceBranch.trim().split('/')
+    const number = secondPart.replace('ALFABANKRU-', '')
     const me = await getMe();
     let mr = await findMrBranch();
 
@@ -79,7 +81,7 @@ try {
 
 ## Стенд
 
-[Ссылка, на конкретную стори]
+http://akit-${firstPart}-alfabankru-${number}.reviews.ci.k8ng.alfa.link/api/akit/
 
 
 Closes ${jiraTaskName}`,
